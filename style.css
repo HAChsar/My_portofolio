@@ -1,0 +1,183 @@
+
+       
+       body {
+               
+                background-size: cover;
+                position: relative;
+                background-color:  #fff6ea;
+                background-image: url(./pf\(bg\).jpg);
+                transition: opacity 1s ease; opacity: 1;
+                height:50vh;
+                /* Makes it stay fixed during scroll */
+            }   
+         body.fade-out 
+         { 
+            opacity: 10;
+        }
+       
+        .image
+        {
+            float: left;
+            margin-top: 9%;
+           
+            transition: color 0.5s ease, transform 0.5s ease; 
+            box-shadow: 20px 20px 20px #242f44;
+            border-radius: 500%;
+            margin-left: 8%;
+           
+        }
+       
+        .image img
+        {
+            border-radius: 70%; /* This will make the image circular */
+            object-fit:fill; 
+            
+        }
+        .image1
+        {
+            float: left;
+            margin-top: 2%;
+            margin-bottom: 20%;
+            transition: color 0.5s ease, transform 0.5s ease; 
+        
+            border-radius: 500%;
+           
+        }
+        .image1 img
+        {
+            border-radius: 70%; /* This will make the image circular */
+            object-fit:fill; 
+            
+        }
+        .intro{
+            text-align: left;
+            margin-top: 12%;
+            margin-left: 33%;
+            margin-bottom: 20%;
+            
+            font-size: xx-large;
+            color: #242f44;  
+           
+        }  
+        header
+        {
+            font-family: 'Roboto', sans-serif;
+            color: #242f44;
+            font-size: x-large;
+           
+            
+        }
+        .pg
+        {
+            display: flex;
+            justify-content: flex;
+            gap: 25px;
+        }
+       .box
+       {
+        display: flex;
+        justify-content: flex;
+        gap: 20px;
+        background-color: whitesmoke;
+        width: 200px;
+        height: 60px;
+        border-radius: 16px;
+        transform-style: preserve-3d;
+         transition: transform 0.5s;
+        box-shadow: 5px 5px 5px lightcoral;
+       }
+       .box:hover
+       {
+        transform: translateZ(10px) scale(1.1);
+       }
+        section
+        {
+            text-align: left;
+            margin-left: 20%;
+            
+        }
+        #one:hover{
+            color: lightcoral;
+
+        }
+        .ft
+        {
+            text-align: center; /* Center text horizontally */
+            position: relative; /* Makes footer stick to the bottom */
+            /* Padding for better spacing */
+            bottom: 0;
+            width: 100%;
+            transition: color 5s ease;
+             transform: 5s ease; 
+            color: lightcoral;
+           
+             /* Smoothly transitions the hover effects */    
+        }
+        .ft a{
+            margin-left: 25px;
+            text-decoration: none;
+            color: #242f44;
+            font-size: large;
+            transition: margin-left 5s ease, color 5s ease, font-size 5s ease;
+        }
+        .ftE
+        {
+           
+            text-align: center; /* Center text horizontally */
+            position: fixed; /* Makes footer stick to the bottom */
+            padding: 10px 0; /* Padding for better spacing */
+            bottom: 0;
+            width: 100%;
+            transition:all 10s ease;
+            transform: 10s ease;
+            color: lightcoral;  
+        }
+
+        .ftE a{
+            margin-left: 25px;
+            text-decoration: none;
+            color: #242f44;
+            font-size: large;
+            transition: margin-left 5s ease, color 5s ease, font-size 5s ease;
+        }
+        
+        .two
+        {
+            font-size: xx-large;
+            text-align: left;
+            margin-left: 22%;
+        }
+        #contactForm
+        {
+                text-align: left;
+                font-family: 'Roboto', sans-serif;
+                font-size: x-large;
+                margin-left: 5%;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 25%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 10px 30px#242f44;
+        }
+        .contact-form label{
+
+            color: #242f44;
+
+        }
+        .contact-form button{
+            width: 15%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 5px 10px 30px lightcoral;
+        }
+        .contact-form button:hover
+        {
+            color: lightcoral;
+        }
+        @media (max-width: 768px) { body { background-size: cover; background-color: #fff6ea; background-image: url(./pf\(bg\).jpg); } .image, .image1 { float: none; margin: 10% auto; display: block; width: 80%; } .intro { text-align: center; margin-top: 20%; margin-left: 5%; margin-bottom: 10%; font-size: large; } header { font-size: large; } .pg, .box { display: block; width: 80%; margin: 10px auto; } section { text-align: center; margin-left: 5%; } .two { font-size: large; text-align: center; margin-left: 5%; } #contactForm { font-size: medium; margin-left: 5%; } .contact-form input, .contact-form textarea, .contact-form button { width: 80%; margin: 5px auto; display: block; } .ft, .ftE { text-align: center; padding: 10px 0; } .ft a, .ftE a { display: block; margin: 5px auto; font-size: medium; } }
+    
