@@ -94,10 +94,13 @@
         {
             text-align: left;
             margin-left: 20%;
+            transition: color 1s ease;
+            transform: 1s ease;
             
         }
         #one:hover{
             color: lightcoral;
+            transition: margin-left 1s ease, color 1s ease, font-size 1s ease;
 
         }
         .ft
@@ -107,8 +110,8 @@
             /* Padding for better spacing */
             bottom: 0;
             width: 100%;
-            transition: color 5s ease;
-             transform: 5s ease; 
+            transition: color 1s ease;
+            transform: 1s ease; 
             color: lightcoral;
            
              /* Smoothly transitions the hover effects */    
@@ -118,7 +121,11 @@
             text-decoration: none;
             color: #242f44;
             font-size: large;
-            transition: margin-left 5s ease, color 5s ease, font-size 5s ease;
+            transition: margin-left 1s ease, color 1s ease, font-size 1s ease;
+        }
+        .ft a:hover
+        {
+            color: lightcoral;
         }
         .ftE
         {
@@ -128,8 +135,8 @@
             padding: 10px 0; /* Padding for better spacing */
             bottom: 0;
             width: 100%;
-            transition:all 10s ease;
-            transform: 10s ease;
+            transition:color 1s ease;
+            transform: 1s ease;
             color: lightcoral;  
         }
 
@@ -138,7 +145,12 @@
             text-decoration: none;
             color: #242f44;
             font-size: large;
-            transition: margin-left 5s ease, color 5s ease, font-size 5s ease;
+            transition: margin-left 1s ease, color 1s ease, font-size 1s ease;
+        }
+        .ftE a:hover
+        {
+            color: lightcoral;
+          
         }
         
         .two
