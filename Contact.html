@@ -3,13 +3,14 @@
 <head>
     <title>Harshavardhan</title>  
     <link href='style.css' rel="stylesheet"></link>
+  
 </head>
 <body>
 <header>
     <h2>| Contact:</h2>
     <div class="contact-form">
         
-        <form id="contactForm"action="./thank-you.html" method="post" autocomplete="on">
+        <form id="contactForm" action="./thank-you.html" method="post" autocomplete="on">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
             
@@ -33,6 +34,28 @@
     <a href="https://www.instagram.com/harshavardhan_kante/"><img src="./instagram.png" width="24" height="24"></a>
 <a href="https://www.linkedin.com/in/kante-harshavardhan-57b281200/"><img src="./linkedin.png" width="24" height="24"></a>
  <a href="https://github.com/HAChsar"><img src="./github.png" width="30" height="30"></a>
-    <p>© 2024 kante Harshavardhan. All Rights Reserved.</p></div>
-</body></div>
-</html> 
+    <p>© 2024 kante Harshavardhan. All Rights Reserved.</p></div>
+</body>
+<script>
+    function getData() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Message:', message);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the form from submitting
+            getData();
+        });
+
+        document.getElementById('clearButton').addEventListener('click', function() {
+            document.getElementById('contactForm').reset();
+        });
+    });
+</script>
+</html>
